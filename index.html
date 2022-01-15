@@ -5,6 +5,388 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CA-Portal</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Monda"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+
+  <body>
+    <main>
+      <!-- Navbar Section -->
+      <nav id="top">
+        <a href="#">
+          <img class="logo" src="./assets/img/adhyaaya_logo.png" />
+        </a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#feedback" class="nav-link">Feedback</a>
+          <a href="#howitworks" class="nav-link">How it works</a>
+          <a href="#contactus" class="nav-link">Contact Us</a>
+        </div>
+        <i class="bx bx-menu" id="toggle_icon"></i>
+      </nav>
+      <a href="#top"
+        ><img src="./assets/img/top.png" class="back-to-top hidden"
+      /></a>
+      <!-- Navbar Section END -->
+
+      <!-- Main Section (1) -->
+      <div class="landingPage">
+        <!-- design band -->
+        <div class="main_content">
+          <div class="main_text">
+            <h1 id="hh1">Adhyaaya'22</h1>
+            <h2 id="hh2">CA-PORTAL</h2>
+            <a href="#" class="button">Register</a>
+          </div>
+          <div class="img-container">
+            <img
+              id="CA"
+              src="./assets/img/mianing.png"
+              alt="Campus Ambassador"
+            />
+          </div>
+        </div>
+        <div class="leftband1"></div>
+        <div class="leftband2"></div>
+        <div class="rightband1"></div>
+        <div class="rightband2"></div>
+        <div class="rightband3"></div>
+        <div class="rightband4"></div>
+      </div>
+      <!-- Main Section (1) END -->
+
+      <!-- Sponsors Section (1.2)-->
+
+      <!-- Sponsors Section (1.2) END-->
+
+      <!-- Benifits & Incentives Section (2) -->
+      <div class="campusambassadorprogram" id="about">
+        <div class="heading">
+          <h1 class="heading-campus">
+            CAMPUS<br />AMBASSADOR<br />PROGRAM<br />
+          </h1>
+        </div>
+        <div class="loremipsum">
+          Lorem ipsum is a common placeholder text used to demonstrate<br />
+          the graphic elements of a document or visual presentation
+        </div>
+        <!-- Grid part starts here -->
+        <div class="grid-one">
+          <div class="benefit-one">
+            <i class="bx bx-money-withdraw" id="b1"></i>
+            <h1 id="b2">Benefit - 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
+              Necessitatibus, harum.
+            </p>
+          </div>
+          <div class="benefit-two">
+            <i class="bx bx-money-withdraw" id="b1"></i>
+            <h1 id="b2">Benefit - 2</h1>
+            <p>
+              Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
+              Necessitatibus, harum.
+            </p>
+          </div>
+          <div class="benefit-three">
+            <i class="bx bx-money-withdraw" id="b1"></i>
+            <h1 id="b2">Benefit - 3</h1>
+            <p>
+              Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
+              Necessitatibus, harum.
+            </p>
+          </div>
+          <div class="benefit-four">
+            <i class="bx bx-money-withdraw" id="b1"></i>
+            <h1 id="b2">Benefit - 4</h1>
+            <p>
+              Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
+              Necessitatibus, harum.
+            </p>
+          </div>
+          <div class="benefit-five">
+            <i class="bx bx-money-withdraw" id="b1"></i>
+            <h1 id="b2">Benefit - 5</h1>
+            <p>
+              Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
+              Necessitatibus, harum.
+            </p>
+          </div>
+          <div class="benefit-six">
+            <i class="bx bx-money-withdraw" id="b1"></i>
+            <h1 id="b2">Benefit - 6</h1>
+            <p>
+              Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
+              Necessitatibus, harum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Benifits & Incentives Section (2) END -->
+
+      <!-- Benifits & Incentives Section (2) -- Carousel for Mobile view -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide relative"
+        data-bs-ride="carousel"
+      >
+        <div
+          class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+        >
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+              class="block w-full"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+              class="block w-full"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+              class="block w-full"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Benifits & Incentives Section (2) -- Carousel for Mobile view END -->
+
+      <!-- FEEDBACK SECTION (3) -->
+      <div class="feedback" id="feedback">
+        <div class="feedback-inside">
+          <div class="feedback-main">
+            <h1>Feedback from<br />previous CA</h1>
+          </div>
+          <div class="feedback-one">Feedback - 1</div>
+          <div class="feedback-two">Feedback - 2</div>
+          <div class="feedback-three">Feedback - 3</div>
+        </div>
+      </div>
+      <!-- FEEDBACK SECTION (3) END -->
+
+      <!-- How it works Section (4) -->
+      <div class="work" id="howitworks">
+        <h1 class="work_title">How it Works</h1>
+        <div class="container1">
+          <div class="content1">
+            <img src="./assets/img/works1.jpg" alt="works1" />
+            <h4>Create your site</h4>
+            <p>Lorem ipsum dolor sit amet co</p>
+          </div>
+          <div class="content1">
+            <img src="./assets/img/works2.jpg" alt="works2" />
+            <h4>Add content</h4>
+            <p>Lorem ipsum dolor sit amet co</p>
+          </div>
+          <div class="content1">
+            <img src="./assets/img/works3.jpg" alt="works3" />
+            <h4>Publish</h4>
+            <p>Lorem ipsum dolor sit amet co</p>
+          </div>
+        </div>
+      </div>
+      <!-- How it works Section (4) END -->
+    </main>
+
+    <!--FOOTER (5)-->
+    <footer class="footer" id="contactus">
+      <div class="footer_sections">
+        <div class="footer_section_t">
+          <img src="./assets/img/adhyaaya_logo.png" alt="" class="flogo" />
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="450"
+                height="300"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?ll=21.0518352,79.059928&q=Government College of Engineering Nagpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="1"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 300px;
+                width: 450px;
+                border-radius: 15px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 300px;
+                width: 450px;
+                border-radius: 10px 10px 10px 10px;
+              }
+            </style>
+          </div>
+        </div>
+
+        <div class="footer_section">
+          <h2 class="footer_title">Product</h2>
+          <ul class="fli">
+            <li>Overview</li>
+            <li>Features</li>
+            <li>Tutorials</li>
+            <li>Pricing</li>
+            <li>Releases</li>
+          </ul>
+        </div>
+
+        <div class="footer_section">
+          <h2 class="footer_title">Company</h2>
+          <ul class="fli">
+            <li>About</li>
+            <li>Press</li>
+            <li>Careers</li>
+            <li>Contact</li>
+            <li>Partners</li>
+          </ul>
+        </div>
+
+        <div class="footer_section">
+          <h2 class="footer_title">Support</h2>
+          <ul class="fli">
+            <li>Help Center</li>
+            <li>Terms of Services</li>
+            <li>Legal</li>
+            <li>Privacy Policy</li>
+            <li>Status</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <p>
+            &copy; Made with ❤️ by TECH TEAM | ADHYAAYA'22 | GCOEN | ALL RIGHTS
+            RESERVED
+          </p>
+        </div>
+        <div class="footer-sco">
+          <a href="mailto:adhyaaya.gcoen@gmail.com" target="_blank"
+            ><i class="bx bx-envelope" id="socials"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCQgGGoNJaQRxs5myAZTcbsQ"
+            target="_blank"
+            ><i class="bx bxl-youtube" id="socials"></i
+          ></a>
+          <a href="https://www.instagram.com/adhyaaya.gcoen/" target="_blank"
+            ><i class="bx bxl-instagram" id="socials"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/adhyaaya/" target="_blank"
+            ><i class="bx bxl-linkedin" id="socials"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!--FOOTER (5)END-->
+
+    <!-- JS -->
+    <script src="./assets/js/logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <!-- JS END-->
+  </body>
 </html>

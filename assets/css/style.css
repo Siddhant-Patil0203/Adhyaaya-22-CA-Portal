@@ -1,0 +1,599 @@
+/****************** Basic Css ******************/
+* {
+  box-sizing: border-box;
+  font-family: Monda;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/****** Scroll Bar ******/
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(252, 66, 190);
+}
+/****** Scroll Bar END ******/
+
+body {
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+main {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  width: auto;
+  overflow: hidden;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/****************** Basic Css End ******************/
+
+/****************** Navbar Section ******************/
+nav {
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 10px 100px;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+nav i {
+  display: none;
+  opacity: 0;
+  font-size: 40px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-links {
+  display: flex;
+  margin: auto 0;
+  margin-left: 70px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: all 200ms;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(252, 66, 190);
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  bottom: 10%;
+  transition: all 400ms;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/****************** Navbar Section END ******************/
+
+/****************** Main Section (1) ******************/
+.landingPage {
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+.main_content {
+  display: flex;
+}
+
+.main_text {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 10%;
+  top: 85px;
+}
+#hh1 {
+  font-family: amarilloregular;
+  font-size: 3.4em;
+  padding: 15px;
+}
+
+#hh2 {
+  font-family: Inter;
+  font-size: 3.4em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.button {
+  margin: 10px;
+  width: 210px;
+  background: #8c30f5;
+  border-radius: 6px;
+  color: #fff;
+  padding: 16px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(252, 66, 190);
+}
+
+.img-container #CA {
+  position: absolute;
+  height: 700px;
+  right: 15px;
+  top: -54px;
+  z-index: 2;
+}
+
+.landingPage .leftband1 {
+  position: absolute;
+  width: 420px;
+  height: 55px;
+  left: -8px;
+  top: 545px;
+  background: #75e3ea;
+  transform: rotate(353deg);
+  z-index: 1;
+}
+
+.landingPage .leftband2 {
+  position: absolute;
+  width: 420px;
+  height: 55px;
+  left: -152px;
+  top: 617.49px;
+  background: #f1e4ff;
+  transform: rotate(353deg);
+  z-index: 1;
+}
+
+.landingPage .rightband1 {
+  position: absolute;
+  width: 420px;
+  height: 55px;
+  left: 77%;
+  top: 309px;
+  background: #f1e4ff;
+  transform: rotate(353deg);
+  z-index: 1;
+}
+
+.landingPage .rightband2 {
+  position: absolute;
+  width: 750px;
+  height: 55px;
+  left: 62%;
+  top: 42.2%;
+  background: #d6b1ff;
+  transform: rotate(353deg);
+  z-index: 1;
+}
+
+.landingPage .rightband3 {
+  position: absolute;
+  width: 420px;
+  height: 55px;
+  left: 80%;
+  top: 46%;
+  background: #75e3ea;
+  transform: rotate(353deg);
+  z-index: 1;
+}
+
+.landingPage .rightband4 {
+  position: absolute;
+  width: 110%;
+  height: 800px;
+  top: 500.49px;
+  background: #fff;
+  transform: rotate(353deg);
+}
+
+/****************** Main Section (1) END ******************/
+
+/****************** Sponsors Section (1.2) ******************/
+
+/****************** Sponsors Section (1.2) END ******************/
+
+/****************** Benifits & Incentives Section (2) ******************/
+
+.campusambassadorprogram {
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+#b1 {
+  font-size: 2em;
+  color: rgb(54, 124, 204);
+}
+#b2 {
+  font-size: 1.6em;
+  font-weight: 900;
+  margin: 10px;
+}
+
+.heading {
+  height: 170px;
+  padding: 40px;
+  text-align: center;
+}
+.heading-campus {
+  font-size: 2.4em;
+  font-family: Inter;
+  font-weight: 800;
+}
+
+.loremipsum {
+  padding-top: 15px;
+  margin: 30px 0px 58px 0px;
+  text-align: center;
+}
+
+.heading-program {
+  padding-left: 32px;
+}
+
+.heading-ambassador {
+  text-align: center;
+}
+
+.grid-one {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 100px;
+  grid-row-gap: 80px;
+  text-align: center;
+  padding: 20px 20px 170px 20px;
+}
+.benefit-one {
+  width: 600px;
+  width: 400px;
+  height: 120px;
+}
+.benefit-two {
+  width: 350px;
+  width: 400px;
+  height: 120px;
+}
+.benefit-three {
+  width: 600px;
+  width: 400px;
+  height: 120px;
+}
+.benefit-four {
+  width: 350px;
+  width: 400px;
+  height: 120px;
+}
+.benefit-five {
+  width: 350px;
+  width: 400px;
+  height: 120px;
+}
+.benefit-six {
+  width: 350px;
+  width: 400px;
+  height: 120px;
+}
+/****************** Benifits & Incentives Section (2) END ******************/
+
+/****************** FEEDBACK SECTION (3) ******************/
+
+.feedback {
+  height: 800px;
+  background-color: #d5fafc;
+  position: relative;
+}
+.feedback-from-ca {
+  height: 200px;
+}
+.feedback-main {
+  position: absolute;
+  top: 150px;
+  left: 255px;
+  height: 200px;
+  width: 400px;
+  text-align: left;
+}
+.feedback-main h1 {
+  font-size: 2.8em;
+  font-family: Inter;
+  font-weight: 800;
+}
+
+.feedback-one {
+  background-color: #fff;
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  right: 300px;
+  top: 150px;
+}
+.feedback-two {
+  background-color: #fff;
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  top: 500px;
+  right: 400px;
+}
+.feedback-three {
+  background-color: #fff;
+  position: absolute;
+  top: 365px;
+  left: 350px;
+  height: 350px;
+  width: 300px;
+}
+/****************** FEEDBACK SECTION (3) END ******************/
+
+/****************** How it works Section (4) ******************/
+
+.work {
+  background-color: #fff;
+  position: relative;
+}
+.work_title {
+  text-align: center;
+  padding: 80px;
+  font-size: 2.8em;
+  font-family: Inter;
+  font-weight: 800;
+}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-bottom: 140px;
+}
+.container1 .content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.container1 .content1 img {
+  width: 200px;
+  border-radius: 50%;
+}
+.container1 .content1 h4 {
+  font-size: 1.7em;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+}
+.container1 .content1 p {
+  font-size: 1.3em;
+  margin: 10px 0 0 0;
+}
+.carousel {
+  display: none;
+}
+
+/****************** How it works Section (4) END ******************/
+
+/****************** FOOTER (5) ******************/
+
+.footer {
+  color: white;
+  background-color: rgba(11, 13, 23, 0.95);
+  width: 100%;
+  height: auto;
+}
+
+.footer_sections {
+  padding: 20px;
+  display: grid;
+  text-align: left;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer_title {
+  padding: 15% 0 10px 0;
+}
+.footer_section ul {
+  list-style: none;
+  color: rgb(223, 219, 219);
+}
+
+.footer_section_t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fli li {
+  padding: 10px 0 10px 0;
+}
+
+.flogo {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.footer-bottom {
+  display: grid;
+  background-color: black;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5px;
+}
+
+.footer-copy {
+  padding: 20px 0 20px 7%;
+}
+.footer-sco {
+  text-align: right;
+  padding: 20px 15% 20px 0;
+}
+
+#socials {
+  font-size: 1.8em;
+  padding: 0 13px;
+}
+
+#socials:hover {
+  color: aqua;
+}
+/****************** FOOTER (5) END ******************/
+
+/****************** Responsiveness ******************/
+
+/***** Navbar Section *****/
+@media screen and (max-width: 700px) {
+  nav {
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  nav i {
+    display: block;
+    opacity: 1;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav-links {
+    /* display: none; */
+    flex-direction: column;
+    position: absolute;
+    top: -500%;
+    right: 0%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 200ms;
+    z-index: -1;
+  }
+
+  .nav-link::after,
+  .nav-link::before {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 80px;
+  display: none;
+  z-index: 20;
+}
+/***** Navbar Section END *****/
+
+/***** Main Section (1) *****/
+@media screen and (max-width: 700px) {
+  .main_content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main_text {
+    align-items: center;
+    left: 0%;
+    top: 35px;
+  }
+  #hh1 {
+    font-size: 2.4em;
+    padding: 0px;
+  }
+  #hh2 {
+    font-size: 2.8em;
+    padding: 8px;
+  }
+  .img-container #CA {
+    height: 400px;
+    top: 190px;
+  }
+  .button {
+    padding: 12px;
+    font-size: 1.6em;
+    margin-top: 450px;
+    z-index: 2;
+  }
+}
+
+/***** Main Section (1) END *****/
+
+/***** How it works Section (4) *****/
+@media screen and (max-width: 700px) {
+  .content {
+    margin: 10px 20px 10px 20px;
+  }
+  .container1 .content1 img {
+    width: 180px;
+    height: 180px;
+  }
+  .container1 .content1 h4 {
+    font-size: 23px;
+  }
+  .container1 .content1 p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .work {
+    height: auto;
+  }
+  .container1 .content1 {
+    margin: 20px 20px 20px 20px;
+  }
+  .carousel {
+    display: block;
+  }
+}
+/***** How it works Section (4) END *****/
+
+/****************** Responsiveness END ******************/

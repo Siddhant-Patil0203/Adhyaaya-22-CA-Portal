@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "amarilloregular";
+  src: url("amarillo1-webfont.woff2") format("woff2"),
+    url("amarillo1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
