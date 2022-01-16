@@ -544,7 +544,7 @@ nav i {
     right: 0%;
     width: 100%;
     background: whitesmoke;
-    color: rgb(252, 66, 190);
+    color: rgb(147, 66, 252);
     transition: all 200ms;
     z-index: -1;
     border-radius: 15px;
@@ -578,7 +578,7 @@ nav i {
   .main_text {
     align-items: center;
     left: 0%;
-    top: 35px;
+    top: 13px;
   }
   #hh1 {
     font-size: 2.4em;
@@ -589,14 +589,44 @@ nav i {
     padding: 8px;
   }
   .img-container #CA {
-    height: 400px;
-    top: 190px;
+    height: 340px;
+    top: 160px;
   }
   .button {
-    padding: 12px;
+    padding: 9px 0px 9px 0px;
     font-size: 1.6em;
-    margin-top: 450px;
+    margin-top: 350px;
     z-index: 2;
+    width: 150px;
+  }
+  .landingPage .leftband1 {
+    position: absolute;
+    width: 420px;
+    height: 55px;
+    left: -8px;
+    top: 545px;
+    background: #75e3ea;
+    transform: rotate(353deg);
+    z-index: 1;
+  }
+
+  .landingPage .leftband2 {
+    display: none;
+  }
+
+  .landingPage .rightband1 {
+    display: block;
+    left: 57%;
+    top: 40%;
+  }
+
+  .landingPage .rightband2 {
+    left: 8%;
+    top: 46.2%;
+  }
+
+  .landingPage .rightband3 {
+    display: none;
   }
 }
 
