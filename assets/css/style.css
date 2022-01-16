@@ -225,21 +225,24 @@ nav i {
 
 /****************** Main Section (1) END ******************/
 
-/****************** Sponsors Section (1.2) ******************/
-
-/****************** Sponsors Section (1.2) END ******************/
-
 /****************** Benifits & Incentives Section (2) ******************/
 
 .campusambassadorprogram {
   position: relative;
   text-align: center;
   background: #fff;
+  margin-top: 100px;
+  padding: 0px 30px 40px 30px;
 }
 
-#b1 {
+.s1 {
   font-size: 2em;
   color: rgb(54, 124, 204);
+}
+
+.s1:hover {
+  color: rgb(252, 66, 190);
+  font-size: 2.5em;
 }
 #b2 {
   font-size: 1.6em;
@@ -248,19 +251,17 @@ nav i {
 }
 
 .heading {
-  height: 170px;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
 }
 .heading-campus {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-family: Inter;
   font-weight: 800;
 }
 
 .loremipsum {
-  padding-top: 15px;
-  margin: 30px 0px 58px 0px;
+  margin-bottom: 58px;
   text-align: center;
 }
 
@@ -282,85 +283,114 @@ nav i {
   text-align: center;
   padding: 20px 20px 170px 20px;
 }
-.benefit-one {
-  width: 600px;
-  width: 400px;
-  height: 120px;
-}
-.benefit-two {
-  width: 350px;
-  width: 400px;
-  height: 120px;
-}
-.benefit-three {
-  width: 600px;
-  width: 400px;
-  height: 120px;
-}
-.benefit-four {
-  width: 350px;
-  width: 400px;
-  height: 120px;
-}
-.benefit-five {
-  width: 350px;
-  width: 400px;
-  height: 120px;
-}
-.benefit-six {
-  width: 350px;
-  width: 400px;
-  height: 120px;
-}
+
 /****************** Benifits & Incentives Section (2) END ******************/
 
 /****************** FEEDBACK SECTION (3) ******************/
 
 .feedback {
-  height: 800px;
-  background-color: #d5fafc;
+  padding: 40px;
   position: relative;
+  background-color: #d5fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
 }
-.feedback-from-ca {
-  height: 200px;
+
+.feedback-inside {
+  margin: 105px 0 40px 0px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
+  width: fit-content;
 }
 .feedback-main {
   position: absolute;
-  top: 150px;
-  left: 255px;
-  height: 200px;
-  width: 400px;
-  text-align: left;
-}
-.feedback-main h1 {
-  font-size: 2.8em;
-  font-family: Inter;
-  font-weight: 800;
+  padding: 20px;
+  top: 37px;
+  left: 10%;
 }
 
 .feedback-one {
-  background-color: #fff;
-  position: absolute;
-  height: 300px;
-  width: 400px;
-  right: 300px;
-  top: 150px;
+  margin: 123px 0 81px 0;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  max-width: 318px;
+  text-align: left;
+  padding: 20px;
 }
+
 .feedback-two {
-  background-color: #fff;
-  position: absolute;
-  height: 250px;
-  width: 300px;
-  top: 500px;
-  right: 400px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  max-width: 550px;
+  text-align: left;
+  padding: 20px;
 }
+
 .feedback-three {
-  background-color: #fff;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: left;
+  padding: 20px;
+}
+
+#quality {
+  font-size: 1.5em;
+  color: rgb(252, 66, 190);
+  font-weight: bolder;
+  padding: 10px 0px 20px 0;
+}
+
+#caname {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+#cayear,
+#cacollege {
+  font-size: 1em;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.thougts {
+  margin-left: 30px;
+}
+
+#feed {
+  font-size: 2.8em;
+  font-family: Inter;
+  font-weight: 800;
+  text-align: left;
+  margin: 42px 0 0 87px;
+}
+
+#quotes {
+  font-size: 10em;
+  color: #2ec5ce;
+  opacity: 0.5;
   position: absolute;
-  top: 365px;
-  left: 350px;
-  height: 350px;
-  width: 300px;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+#quotes2 {
+  font-size: 1.2em;
+  color: #2ec5ce;
+  position: absolute;
 }
 /****************** FEEDBACK SECTION (3) END ******************/
 
@@ -407,9 +437,6 @@ nav i {
   font-size: 1.3em;
   margin: 10px 0 0 0;
 }
-.carousel {
-  display: none;
-}
 
 /****************** How it works Section (4) END ******************/
 
@@ -420,6 +447,7 @@ nav i {
   background-color: rgba(11, 13, 23, 0.95);
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .footer_sections {
@@ -430,6 +458,7 @@ nav i {
 }
 .footer_title {
   padding: 15% 0 10px 0;
+  font-size: 1.5em;
 }
 .footer_section ul {
   list-style: none;
@@ -443,8 +472,11 @@ nav i {
 }
 .fli li {
   padding: 10px 0 10px 0;
+  cursor: pointer;
 }
-
+.fli li:hover {
+  color: aqua;
+}
 .flogo {
   width: 25%;
   margin-bottom: 20px;
@@ -452,25 +484,31 @@ nav i {
 .footer-bottom {
   display: grid;
   background-color: black;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   margin-top: 5px;
 }
 
 .footer-copy {
-  padding: 20px 0 20px 7%;
+  padding: 20px 9px 20px 7%;
 }
 .footer-sco {
   text-align: right;
-  padding: 20px 15% 20px 0;
+  padding: 20px 25% 10px 0;
 }
-
-#socials {
+.footer-sco_2 {
+  display: none;
+  padding: 20px 0 40px 0;
+}
+.ss1 {
   font-size: 1.8em;
   padding: 0 13px;
 }
 
-#socials:hover {
+.ss1:hover {
   color: aqua;
+}
+.frame2 {
+  display: none;
 }
 /****************** FOOTER (5) END ******************/
 
@@ -529,10 +567,11 @@ nav i {
 /***** Navbar Section END *****/
 
 /***** Main Section (1) *****/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1208px) {
   .main_content {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .main_text {
     align-items: center;
@@ -560,6 +599,53 @@ nav i {
 }
 
 /***** Main Section (1) END *****/
+
+/***** Benifits & Incentives Section (2) *****/
+@media screen and (max-width: 650px) {
+  .grid-one {
+    grid-template-columns: auto auto;
+    grid-column-gap: 70px;
+    grid-row-gap: 80px;
+  }
+  #b2 {
+    font-size: 1.2em;
+  }
+}
+/***** Benifits & Incentives Section (2) END *****/
+
+/***** FEEDBACK SECTION (3) END *****/
+@media screen and (max-width: 1579px) {
+  .feedback-main {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .feedback-main {
+    position: relative;
+    left: 0%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .feedback-inside {
+    grid-template-columns: auto;
+  }
+  .feedback-one {
+    margin: 0px;
+    grid-row-start: 0;
+    grid-row-end: 0;
+    max-width: 400px;
+  }
+  .feedback-two {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .feedback-main {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+/***** FEEDBACK SECTION (3) END *****/
 
 /***** How it works Section (4) *****/
 @media screen and (max-width: 700px) {
@@ -590,10 +676,65 @@ nav i {
   .container1 .content1 {
     margin: 20px 20px 20px 20px;
   }
-  .carousel {
+}
+/***** How it works Section (4) END *****/
+
+/***** FOOTER (5) *****/
+@media screen and (max-width: 1640px) {
+  iframe {
+    height: 200px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1432px) {
+  .footer_sections {
+    grid-template-columns: auto auto auto;
+  }
+  .footer_section_t {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .footer_section {
+    text-align: center;
+  }
+  .flogo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1276px) {
+  .footer-sco {
+    display: none;
+  }
+  .footer-sco_2 {
     display: block;
   }
 }
-/***** How it works Section (4) END *****/
+@media screen and (max-width: 794px) {
+  .footer-copy p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 794px) {
+  .back-to-top {
+    right: 1.8rem;
+    bottom: 4rem;
+  }
+}
+@media screen and (max-width: 484px) {
+  .frame {
+    display: none;
+  }
+  .frame2 {
+    display: block;
+  }
+  .footer_sections {
+    grid-template-columns: auto;
+  }
+  .footer_section_t {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+/***** FOOTER (5) END *****/
 
 /****************** Responsiveness END ******************/
