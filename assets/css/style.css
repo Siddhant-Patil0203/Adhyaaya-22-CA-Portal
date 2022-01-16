@@ -519,8 +519,8 @@ nav i {
   nav {
     position: relative;
     z-index: 10;
-    margin-top: 10px;
     padding: 0px;
+    margin: 10px 20px;
   }
 
   nav i {
@@ -529,7 +529,7 @@ nav i {
   }
 
   nav {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .logo {
@@ -543,15 +543,17 @@ nav i {
     top: -500%;
     right: 0%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background: whitesmoke;
+    color: rgb(252, 66, 190);
     transition: all 200ms;
     z-index: -1;
+    border-radius: 15px;
   }
 
   .nav-link::after,
   .nav-link::before {
-    display: none;
-    opacity: 0;
+    display: block;
+    opacity: 1;
   }
 }
 
