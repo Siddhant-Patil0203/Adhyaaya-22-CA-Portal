@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- FONT -->
@@ -43,13 +44,21 @@
       <!-- Navbar Section -->
       <nav id="top">
         <a href="#">
-          <img class="logo" src="./assets/img/adhyaaya_logo.png" />
+          <img
+            class="logo"
+            data-aos="zoom-in-right"
+            src="./assets/img/adhyaaya_logo.png"
+          />
         </a>
         <div class="nav-links">
-          <a href="#about" class="nav-link">CA-Program</a>
-          <a href="#feedback" class="nav-link">Feedback</a>
-          <a href="#howitworks" class="nav-link">How it works</a>
-          <a href="#contactus" class="nav-link">Contact Us</a>
+          <a href="#about" class="nav-link" data-aos="flip-up">CA-Program</a>
+          <a href="#feedback" class="nav-link" data-aos="flip-up">Feedback</a>
+          <a href="#howitworks" class="nav-link" data-aos="flip-up"
+            >How it works</a
+          >
+          <a href="#contactus" class="nav-link" data-aos="flip-up"
+            >Contact Us</a
+          >
         </div>
         <i class="bx bx-menu" id="toggle_icon"></i>
       </nav>
@@ -63,17 +72,19 @@
         <!-- design band -->
         <div class="main_content">
           <div class="main_text">
-            <h1 id="hh1">Adhyaaya'22</h1>
-            <h2 id="hh2">CA-PORTAL</h2>
-            <a href="#" class="button">Register</a>
+            <h1 id="hh1" data-aos="zoom-out-up">Adhyaaya'22</h1>
+            <h2 id="hh2" data-aos="zoom-out-up">CA-PORTAL</h2>
+            <a href="#" class="button" data-aos="flip-left">Register</a>
           </div>
           <div class="img-container">
             <img
               id="CA"
               src="./assets/img/mianing.png"
               alt="Campus Ambassador"
+              data-aos="zoom-out-up"
             />
           </div>
+          <a href="#" class="button2" data-aos="flip-left">Register</a>
         </div>
         <div class="leftband1"></div>
         <div class="leftband2"></div>
@@ -87,17 +98,17 @@
       <!-- Benifits & Incentives Section (2) -->
       <div class="campusambassadorprogram" id="about">
         <div class="heading">
-          <h1 class="heading-campus">
+          <h1 class="heading-campus" data-aos="zoom-in-down">
             CAMPUS<br />AMBASSADOR<br />PROGRAM<br />
           </h1>
         </div>
-        <div class="loremipsum">
+        <div class="loremipsum" data-aos="zoom-in-down">
           Lorem ipsum is a common placeholder text used to demonstrate<br />
           the graphic elements of a document or visual presentation
         </div>
         <!-- Grid part starts here -->
         <div class="grid-one">
-          <div class="benefit">
+          <div class="benefit" data-aos="zoom-in">
             <i
               class="bx bx-money-withdraw s1"
               id="b11"
@@ -110,7 +121,7 @@
               Necessitatibus, harum.
             </p>
           </div>
-          <div class="benefit">
+          <div class="benefit" data-aos="zoom-in">
             <i
               class="bx bx-money-withdraw s1"
               id="b12"
@@ -123,7 +134,7 @@
               Necessitatibus, harum.
             </p>
           </div>
-          <div class="benefit">
+          <div class="benefit" data-aos="zoom-in">
             <i
               class="bx bx-money-withdraw s1"
               id="b13"
@@ -136,7 +147,7 @@
               Necessitatibus, harum.
             </p>
           </div>
-          <div class="benefit">
+          <div class="benefit" data-aos="zoom-in">
             <i
               class="bx bx-money-withdraw s1"
               id="b14"
@@ -149,7 +160,7 @@
               Necessitatibus, harum.
             </p>
           </div>
-          <div class="benefit">
+          <div class="benefit" data-aos="zoom-in">
             <i
               class="bx bx-money-withdraw s1"
               id="b15"
@@ -162,7 +173,7 @@
               Necessitatibus, harum.
             </p>
           </div>
-          <div class="benefit">
+          <div class="benefit" data-aos="zoom-in">
             <i
               class="bx bx-money-withdraw s1"
               id="b16"
@@ -181,13 +192,13 @@
 
       <!-- FEEDBACK SECTION (3) -->
       <div class="feedback" id="feedback">
-        <div class="feedback-main">
+        <div class="feedback-main" data-aos="zoom-in-up">
           <i class="bx bxs-quote-alt-left" id="quotes"></i>
           <h1 id="feed">Feedback from<br />previous CA</h1>
         </div>
 
         <div class="feedback-inside">
-          <div class="feedback-one">
+          <div class="feedback-one" data-aos="fade-right">
             <h1 id="quality">Convincing Ability</h1>
             <i class="bx bxs-quote-alt-left" id="quotes2"></i>
 
@@ -204,7 +215,7 @@
               <h3 id="cacollege">Government College of Engineering, Nagpur</h3>
             </div>
           </div>
-          <div class="feedback-two">
+          <div class="feedback-two" data-aos="fade-up-left">
             <h1 id="quality" style="color: rgb(0, 151, 45)">
               Communincation Skills
             </h1>
@@ -222,7 +233,7 @@
               <h3 id="cacollege">Government College of Engineering, Nagpur</h3>
             </div>
           </div>
-          <div class="feedback-three">
+          <div class="feedback-three" data-aos="fade-down-left">
             <h1 id="quality" style="color: rgb(88, 37, 228)">
               Encouraging Skills
             </h1>
@@ -245,19 +256,19 @@
 
       <!-- How it works Section (4) -->
       <div class="work" id="howitworks">
-        <h1 class="work_title">How it Works</h1>
+        <h1 class="work_title" data-aos="zoom-out-up">How it Works</h1>
         <div class="container1">
-          <div class="content1">
+          <div class="content1" data-aos="flip-down">
             <img src="./assets/img/works1.jpg" alt="works1" />
             <h4>Create your site</h4>
             <p>Lorem ipsum dolor sit amet co</p>
           </div>
-          <div class="content1">
+          <div class="content1" data-aos="flip-down">
             <img src="./assets/img/works2.jpg" alt="works2" />
             <h4>Add content</h4>
             <p>Lorem ipsum dolor sit amet co</p>
           </div>
-          <div class="content1">
+          <div class="content1" data-aos="flip-down">
             <img src="./assets/img/works3.jpg" alt="works3" />
             <h4>Publish</h4>
             <p>Lorem ipsum dolor sit amet co</p>
@@ -411,6 +422,10 @@
     <!-- JS -->
     <script src="./assets/js/logic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- JS END-->
   </body>
 </html>
