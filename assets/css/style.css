@@ -303,7 +303,6 @@ nav i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: -2;
 }
 
 .feedback-inside {
@@ -377,11 +376,13 @@ nav i {
 }
 
 #feed {
+  position: relative;
   font-size: 2.8em;
   font-family: Inter;
   font-weight: 800;
   text-align: left;
   margin: 42px 0 0 87px;
+  z-index: 2;
 }
 
 #quotes {
@@ -391,7 +392,7 @@ nav i {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 
 #quotes2 {
@@ -406,15 +407,31 @@ nav i {
 .work {
   background-color: #fff;
   position: relative;
+  z-index: -1;
 }
+
+.modelwithtext {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+canvas {
+  position: relative;
+  top: 5px;
+}
+
 .work_title {
-  text-align: center;
-  padding: 80px;
+  position: relative;
+  margin-bottom: 70px;
   font-size: 2.8em;
   font-family: Inter;
   font-weight: 800;
 }
+
 .container1 {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -422,6 +439,7 @@ nav i {
   text-align: center;
   flex-wrap: wrap;
   padding-bottom: 140px;
+  z-index: 2;
 }
 .container1 .content1 {
   display: flex;
@@ -719,6 +737,12 @@ nav i {
   }
   .container1 .content1 {
     margin: 20px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .modelwithtext {
+    flex-direction: column;
   }
 }
 /***** How it works Section (4) END *****/
