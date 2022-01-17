@@ -70,6 +70,9 @@ controls.target.set(1.4, 1.2, 0);
 controls.update();
 controls.enablePan = false;
 controls.enableDamping = true;
+controls.enableZoom = false;
+controls.enable = false;
+controls.enableRotate = false;
 
 // lights
 var light = new THREE.SpotLight(16726440, 0.5);
@@ -94,6 +97,14 @@ for (var i = 0; i <= 8; i++) {
   pointLights.push(light);
 }
 
+//Loading Screen
+const manager = new THREE.LoadingManager(() => {
+  const loadingScreen = document.getElementById("loading-screen");
+  loadingScreen.classList.add("fade-out");
+
+  loadingScreen.addEventListener("transitionend", onTransitionEnd);
+});
+
 //Model
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath(
@@ -101,8 +112,7 @@ dracoLoader.setDecoderPath(
 );
 
 var model;
-
-const loader = new GLTFLoader();
+const loader = new GLTFLoader(manager);
 loader.setDRACOLoader(dracoLoader);
 loader.load(
   "./assets/3d_model/drone.glb",
@@ -137,6 +147,7 @@ function onMouseMove(event) {
   mouseX = (event.clientX / window.innerWidth) * 2 - 1;
 }
 
+// Animate
 function animate() {
   requestAnimationFrame(animate);
 
