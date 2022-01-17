@@ -70,9 +70,6 @@ controls.target.set(1.4, 1.2, 0);
 controls.update();
 controls.enablePan = false;
 controls.enableDamping = true;
-controls.enableZoom = false;
-controls.enable = false;
-controls.enableRotate = false;
 
 // lights
 var light = new THREE.SpotLight(16726440, 0.5);

@@ -51,6 +51,8 @@ a {
   background-color: rgb(252, 66, 190);
 }
 /****** Scroll Bar END ******/
+
+/****** Loader ******/
 #loading-screen {
   position: absolute;
   z-index: 2;
@@ -131,7 +133,6 @@ a {
     transform: rotate(360deg);
   }
 }
-/****** Loader ******/
 
 /****** Loader END ******/
 
@@ -827,11 +828,6 @@ canvas {
 @media (max-width: 640px) {
   .modelwithtext {
     flex-direction: column;
-  }
-  .work {
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
   }
 }
 /***** How it works Section (4) END *****/
