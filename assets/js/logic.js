@@ -127,13 +127,13 @@ loader.load(
   }
 );
 
-// On Resize
-// window.onresize = function () {
-//   camera.aspect = window.innerWidth / window.innerHeight;
-//   camera.updateProjectionMatrix();
+//On Resize
+window.onresize = function () {
+  camera.aspect = 230 / 200;
+  camera.updateProjectionMatrix();
 
-//   renderer.setSize(window.innerWidth, window.innerHeight);
-// };
+  renderer.setSize(300, 300);
+};
 
 // Follows the mouse event
 document.addEventListener("mousemove", onMouseMove, false); //Mouse move
