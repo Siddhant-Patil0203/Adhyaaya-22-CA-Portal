@@ -3,9 +3,9 @@
   box-sizing: border-box;
   font-family: Monda;
 }
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 body {
   background: #c9d6ff;
