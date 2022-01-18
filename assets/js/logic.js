@@ -72,27 +72,27 @@ controls.enablePan = false;
 controls.enableDamping = true;
 
 // lights
-var light = new THREE.SpotLight(16726440, 0.5);
-light.angle = 0.5;
-light.decay = 1;
-light.position.set(-50.56, -21.69, 50.41);
-scene.add(light);
+// var light = new THREE.SpotLight(16726440, 0.5);
+// light.angle = 0.5;
+// light.decay = 1;
+// light.position.set(-50.56, -21.69, 50.41);
+// scene.add(light);
 
-var pointLight = new THREE.PointLight(216285, 3.1);
-pointLight.decay = 1;
-pointLight.position.set(-2.37, -18.15, 20.48);
-scene.add(pointLight);
+// var pointLight = new THREE.PointLight(216285, 3.1);
+// pointLight.decay = 1;
+// pointLight.position.set(-2.37, -18.15, 20.48);
+// scene.add(pointLight);
 
-var sphere = new THREE.SphereGeometry(0.1, 16, 8);
-for (var i = 0; i <= 8; i++) {
-  light = new THREE.PointLight(16726440, 0.8, 10);
-  light.add(
-    new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({ color: 16726440 }))
-  );
+// var sphere = new THREE.SphereGeometry(0.1, 16, 8);
+// for (var i = 0; i <= 8; i++) {
+//   light = new THREE.PointLight(16726440, 0.8, 10);
+//   light.add(
+//     new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({ color: 16726440 }))
+//   );
 
-  scene.add(light);
-  pointLights.push(light);
-}
+//   scene.add(light);
+//   pointLights.push(light);
+// }
 
 //Loading Screen
 const manager = new THREE.LoadingManager(() => {
@@ -152,42 +152,42 @@ function animate() {
     model.rotation.y = mouseX * 0.7;
   }
 
-  var time = Date.now() * 0.0008;
-  pointLights[0].position.x = Math.sin(time * 0.3) * 15;
-  pointLights[0].position.y = Math.sin(time * 0.5) * 10;
-  pointLights[0].position.z = Math.cos(time * 0.4) * 10;
+  // var time = Date.now() * 0.0008;
+  // pointLights[0].position.x = Math.sin(time * 0.3) * 15;
+  // pointLights[0].position.y = Math.sin(time * 0.5) * 10;
+  // pointLights[0].position.z = Math.cos(time * 0.4) * 10;
 
-  pointLights[1].position.x = Math.sin(time * 0.6) * 10;
-  pointLights[1].position.y = Math.cos(time * 0.7) * 10;
-  pointLights[1].position.z = Math.sin(time * 0.3) * 15;
+  // pointLights[1].position.x = Math.sin(time * 0.6) * 10;
+  // pointLights[1].position.y = Math.cos(time * 0.7) * 10;
+  // pointLights[1].position.z = Math.sin(time * 0.3) * 15;
 
-  pointLights[2].position.x = Math.cos(time * 0.5) * 15;
-  pointLights[2].position.y = Math.cos(time * 0.6) * 10;
-  pointLights[2].position.z = Math.sin(time * 0.8) * 10;
+  // pointLights[2].position.x = Math.cos(time * 0.5) * 15;
+  // pointLights[2].position.y = Math.cos(time * 0.6) * 10;
+  // pointLights[2].position.z = Math.sin(time * 0.8) * 10;
 
-  pointLights[3].position.x = Math.sin(time * 0.3) * 10;
-  pointLights[3].position.y = Math.cos(time * 0.5) * 15;
-  pointLights[3].position.z = Math.cos(time * 0.7) * 10;
+  // pointLights[3].position.x = Math.sin(time * 0.3) * 10;
+  // pointLights[3].position.y = Math.cos(time * 0.5) * 15;
+  // pointLights[3].position.z = Math.cos(time * 0.7) * 10;
 
-  pointLights[4].position.x = Math.sin(time * 0.7) * 15;
-  pointLights[4].position.y = Math.sin(time * 0.3) * 20;
-  pointLights[4].position.z = Math.cos(time * 0.2) * 10;
+  // pointLights[4].position.x = Math.sin(time * 0.7) * 15;
+  // pointLights[4].position.y = Math.sin(time * 0.3) * 20;
+  // pointLights[4].position.z = Math.cos(time * 0.2) * 10;
 
-  pointLights[5].position.x = Math.sin(time * 0.5) * 20;
-  pointLights[5].position.y = Math.cos(time * 0.8) * 10;
-  pointLights[5].position.z = Math.sin(time * 0.5) * 15;
+  // pointLights[5].position.x = Math.sin(time * 0.5) * 20;
+  // pointLights[5].position.y = Math.cos(time * 0.8) * 10;
+  // pointLights[5].position.z = Math.sin(time * 0.5) * 15;
 
-  pointLights[6].position.x = Math.sin(time * 0.5) * 10;
-  pointLights[6].position.y = Math.cos(time * 0.8) * 10;
-  pointLights[6].position.z = Math.cos(time * 0.7) * 15;
+  // pointLights[6].position.x = Math.sin(time * 0.5) * 10;
+  // pointLights[6].position.y = Math.cos(time * 0.8) * 10;
+  // pointLights[6].position.z = Math.cos(time * 0.7) * 15;
 
-  pointLights[7].position.x = Math.sin(time * 0.3) * 10;
-  pointLights[7].position.y = Math.cos(time * 0.5) * 15;
-  pointLights[7].position.z = Math.sin(time * 0.2) * 10;
+  // pointLights[7].position.x = Math.sin(time * 0.3) * 10;
+  // pointLights[7].position.y = Math.cos(time * 0.5) * 15;
+  // pointLights[7].position.z = Math.sin(time * 0.2) * 10;
 
-  pointLights[8].position.x = Math.sin(time * 0.8) * 15;
-  pointLights[8].position.y = Math.cos(time * 0.3) * 10;
-  pointLights[8].position.z = Math.cos(time * 0.3) * 10;
+  // pointLights[8].position.x = Math.sin(time * 0.8) * 15;
+  // pointLights[8].position.y = Math.cos(time * 0.3) * 10;
+  // pointLights[8].position.z = Math.cos(time * 0.3) * 10;
 
   renderer.render(scene, camera);
 }
