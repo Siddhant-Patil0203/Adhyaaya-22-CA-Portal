@@ -148,9 +148,9 @@ function onMouseMove(event) {
 function animate() {
   requestAnimationFrame(animate);
 
-  if (model) {
-    model.rotation.y = mouseX * 0.7;
-  }
+  // if (model) {
+  //   model.rotation.y = mouseX * 0.7;
+  // }
 
   // var time = Date.now() * 0.0008;
   // pointLights[0].position.x = Math.sin(time * 0.3) * 15;
