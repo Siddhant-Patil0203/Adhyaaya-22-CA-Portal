@@ -916,7 +916,14 @@ details > summary::-webkit-details-marker {
   border: 1px solid #888;
   width: 80%;
 }
+.termspop_content h1 {
+  font-size: 2em;
+  font-weight: bolder;
+}
 
+ol {
+  padding-bottom: 60px;
+}
 .close {
   background-color: #04aa6d;
   color: white;
@@ -924,7 +931,7 @@ details > summary::-webkit-details-marker {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 15%;
+  width: 150px;
   border-radius: 15px;
 }
 .close:hover {
