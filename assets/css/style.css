@@ -650,6 +650,109 @@ canvas {
 
 /****************** How it works Section (4) END ******************/
 
+/****************** FAQs Section ******************/
+.faqss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f0c29;
+  padding-bottom: 70px;
+}
+.faq_title {
+  position: relative;
+  margin: 40px;
+  font-size: 2.8em;
+  font-family: Inter;
+  font-weight: 800;
+  color: #fff;
+}
+
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fafafa;
+  background-image: radial-gradient(
+      circle at 40% 91%,
+      rgba(251, 251, 251, 0.04) 0%,
+      rgba(251, 251, 251, 0.04) 50%,
+      rgba(229, 229, 229, 0.04) 50%,
+      rgba(229, 229, 229, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 66% 97%,
+      rgba(36, 36, 36, 0.04) 0%,
+      rgba(36, 36, 36, 0.04) 50%,
+      rgba(46, 46, 46, 0.04) 50%,
+      rgba(46, 46, 46, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 86% 7%,
+      rgba(40, 40, 40, 0.04) 0%,
+      rgba(40, 40, 40, 0.04) 50%,
+      rgba(200, 200, 200, 0.04) 50%,
+      rgba(200, 200, 200, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 15% 16%,
+      rgba(99, 99, 99, 0.04) 0%,
+      rgba(99, 99, 99, 0.04) 50%,
+      rgba(45, 45, 45, 0.04) 50%,
+      rgba(45, 45, 45, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 75% 99%,
+      rgba(243, 243, 243, 0.04) 0%,
+      rgba(243, 243, 243, 0.04) 50%,
+      rgba(37, 37, 37, 0.04) 50%,
+      rgba(37, 37, 37, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(34, 222, 237), rgb(135, 89, 215));
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  width: 500px;
+}
+.faq__content p {
+  text-align: left;
+  width: 500px;
+  margin-bottom: 40px;
+  font-size: 1.4em;
+  color: #fff;
+}
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/****************** FAQs Section END******************/
+
 /****************** Sponsors (5) ******************/
 
 .sponsors {
@@ -738,7 +841,7 @@ canvas {
   grid-template-columns: 2fr 1fr 1fr 1fr;
 }
 .footer_title {
-  padding: 15% 0 10px 0;
+  padding: 150px 0 10px 0;
   font-size: 1.5em;
 }
 .footer_section ul {
@@ -791,6 +894,49 @@ canvas {
 .frame2 {
   display: none;
 }
+
+/**Terms and condition**/
+.termspop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+.termspop_content {
+  background-color: #fefefe;
+  padding: 10%;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  border-radius: 15px;
+}
+.close:hover {
+  opacity: 0.8;
+}
+.in3 a {
+  text-decoration: none;
+}
+h4 a {
+  text-decoration: none;
+}
+
 /****************** FOOTER (6) END ******************/
 
 /****************** Responsiveness ******************/
@@ -1058,8 +1204,20 @@ canvas {
 /***** How it works Section (4) END *****/
 
 /***** Sponsors (6) *****/
-
 /***** Sponsors (6) END *****/
+
+/***** FAQs Section *****/
+@media screen and (max-width: 436px) {
+  summary {
+    width: 300px;
+  }
+  .faq__content p {
+    width: 300px;
+    font-size: 1.4em;
+  }
+}
+
+/***** FAQs Section END *****/
 
 /***** FOOTER (6) *****/
 @media screen and (max-width: 1640px) {
@@ -1081,6 +1239,9 @@ canvas {
   }
   .flogo {
     width: 200px;
+  }
+  .footer_title {
+    padding: 15% 0 10px 0;
   }
 }
 @media screen and (max-width: 1276px) {
