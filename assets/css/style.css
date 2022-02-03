@@ -440,6 +440,7 @@ nav i {
 
 .benefit:hover .benefit-card-inner {
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .front-card,
@@ -942,6 +943,21 @@ ol {
 }
 h4 a {
   text-decoration: none;
+}
+
+.termspop_content2 {
+  background: #0f0c29;
+  padding: 10%;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.heading2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 /****************** FOOTER (6) END ******************/
