@@ -1007,10 +1007,9 @@ h4 a {
 .our-team:hover {
   /* box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset; */
-  background-color: #03e9f4;
+  background-color: #0f0c29;
   color: #050801;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 20px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
   cursor: pointer;
 }
 .our-team .pic {
@@ -1101,20 +1100,12 @@ h4 a {
   text-transform: uppercase;
   margin-bottom: 7px;
 }
-.our-team:hover .title {
-  color: rgb(255, 7, 110);
-}
-
 .our-team .post {
   display: block;
   font-size: 17px;
   font-weight: 600;
   color: #707070;
   text-transform: capitalize;
-}
-
-.our-team:hover .post {
-  color: rgb(255, 98, 7);
 }
 
 #so123 {
