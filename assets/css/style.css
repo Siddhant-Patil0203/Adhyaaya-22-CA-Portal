@@ -476,6 +476,10 @@ nav i {
   font-weight: 500;
 }
 
+.p22 {
+  display: none;
+}
+
 /****************** Benifits & Incentives Section (2) END ******************/
 
 /****************** FEEDBACK SECTION (3) ******************/
@@ -592,7 +596,8 @@ nav i {
 .work {
   background-color: #fff;
   position: relative;
-  z-index: -1;
+  z-index: 0;
+  padding: 20px;
 }
 
 .modelwithtext {
@@ -634,10 +639,8 @@ canvas {
   text-align: center;
   align-items: center;
   align-content: center;
-}
-.container1 .content1 img {
-  width: 200px;
-  border-radius: 50%;
+  width: 310px;
+  height: 410px;
 }
 .container1 .content1 h4 {
   font-size: 1.7em;
@@ -646,7 +649,6 @@ canvas {
 }
 .container1 .content1 p {
   font-size: 1.3em;
-  margin: 10px 0 0 0;
 }
 
 /****************** How it works Section (4) END ******************/
@@ -960,6 +962,21 @@ h4 a {
   font-weight: bolder;
 }
 
+.r123 {
+  font-size: 1.8em;
+  color: #fff;
+  margin: 20px;
+  font-weight: bolder;
+}
+
+.rowss p {
+  color: #fff;
+}
+
+.rowss strong {
+  font-size: 1.5em;
+}
+
 /****************** FOOTER (6) END ******************/
 
 /****************** Responsiveness ******************/
@@ -1143,12 +1160,39 @@ h4 a {
 }
 
 @media screen and (max-width: 646px) {
-  .aboutcaprogram {
-    font-size: 1em;
-  }
   .grid-one {
     grid-template-columns: auto;
     margin: 0 5px 0 5px;
+  }
+  .aboutwithvector {
+    margin: 10px;
+    padding: 20px 20px 60px 20px;
+  }
+
+  .aboutcaprogram {
+    text-align: justify;
+    font-size: 1.1em;
+    padding-right: 0px;
+  }
+  .p11 {
+    display: none;
+  }
+  .loremipsum p {
+    font-size: 1.4em;
+    position: relative;
+    margin: 55px 0 0 20px;
+  }
+  .p22 {
+    display: block;
+  }
+  .heading-campus {
+    font-size: 2em;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .heading-campus::after {
+    left: 0%;
+    bottom: -10%;
   }
 }
 
@@ -1284,6 +1328,15 @@ h4 a {
   .back-to-top {
     right: 1.8rem;
     bottom: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rowss p {
+    font-size: 0.9em;
+  }
+  .heading2 {
+    font-size: 1.5em;
+    font-weight: bolder;
   }
 }
 @media screen and (max-width: 484px) {
