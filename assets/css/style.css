@@ -164,6 +164,7 @@ nav i {
   display: flex;
   margin: auto 0;
   margin-left: 70px;
+  color: #000;
 }
 
 .nav-link {
@@ -975,6 +976,158 @@ h4 a {
 
 .rowss strong {
   font-size: 1.5em;
+}
+
+/** CA - Executive **/
+.termspop_content3 {
+  background: #0f0c29;
+  padding: 10%;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading3 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+.our-team {
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  width: 300px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.our-team:hover {
+  /* box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset; */
+  background-color: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 20px #03e9f4;
+  cursor: pointer;
+}
+.our-team .pic {
+  overflow: hidden;
+  position: relative;
+}
+/* .our-team .pic:before,
+.our-team .pic:after {
+  content: "";
+  width: 200%;
+  height: 80%;
+  background: rgba(38, 37, 37, 0.8);
+  position: absolute;
+  top: -100%;
+  left: -4%;
+  transform: rotate(45deg);
+  transition: all 0.5s ease 0s;
+}
+.our-team .pic:after {
+  background: rgba(253, 253, 253, 0.8);
+  top: auto;
+  left: auto;
+  bottom: -100%;
+  right: -4%;
+}
+.our-team:hover .pic:before {
+  top: 0;
+}
+.our-team:hover .pic:after {
+  bottom: 0;
+} */
+.our-team .pic img {
+  width: 100%;
+  height: auto;
+}
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.5s ease 0.3s;
+}
+.our-team:hover .social {
+  opacity: 1;
+}
+.our-team .social li {
+  display: inline-block;
+}
+.our-team .social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.our-team .social li a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ff1f01;
+  border-radius: 0 20px 20px 20px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover:after {
+  transform: rotate(180deg);
+}
+.our-team .team-content {
+  padding: 20px;
+}
+.our-team .title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #09a89b;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.our-team:hover .title {
+  color: rgb(255, 7, 110);
+}
+
+.our-team .post {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: #707070;
+  text-transform: capitalize;
+}
+
+.our-team:hover .post {
+  color: rgb(255, 98, 7);
+}
+
+#so123 {
+  position: absolute;
+  bottom: -92px;
+  left: 7px;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 30px;
+  }
 }
 
 /****************** FOOTER (6) END ******************/
