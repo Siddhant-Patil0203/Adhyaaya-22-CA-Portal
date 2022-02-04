@@ -60,7 +60,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #ffffff;
   opacity: 1;
   transition: 1s opacity;
 }
@@ -249,7 +249,7 @@ nav i {
   height: 700px;
   right: 15px;
   top: -54px;
-  z-index: 2;
+  z-index: -1;
 }
 
 .landingPage .leftband1 {
@@ -260,7 +260,7 @@ nav i {
   top: 545px;
   background: #75e3ea;
   transform: rotate(353deg);
-  z-index: 1;
+  z-index: -2;
 }
 
 .landingPage .leftband2 {
@@ -271,7 +271,7 @@ nav i {
   top: 617.49px;
   background: #f1e4ff;
   transform: rotate(353deg);
-  z-index: 1;
+  z-index: -2;
 }
 
 .landingPage .rightband1 {
@@ -282,7 +282,7 @@ nav i {
   top: 309px;
   background: #f1e4ff;
   transform: rotate(353deg);
-  z-index: 1;
+  z-index: -2;
 }
 
 .landingPage .rightband2 {
@@ -293,7 +293,7 @@ nav i {
   top: 42.2%;
   background: #d6b1ff;
   transform: rotate(353deg);
-  z-index: 1;
+  z-index: -2;
 }
 
 .landingPage .rightband3 {
@@ -304,7 +304,7 @@ nav i {
   top: 46%;
   background: #75e3ea;
   transform: rotate(353deg);
-  z-index: 1;
+  z-index: -2;
 }
 
 .landingPage .rightband4 {
@@ -314,6 +314,7 @@ nav i {
   top: 500.49px;
   background: #fff;
   transform: rotate(353deg);
+  z-index: -2;
 }
 
 /****************** Main Section (1) END ******************/
@@ -919,6 +920,7 @@ details > summary::-webkit-details-marker {
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 80%;
+  z-index: 13;
 }
 .termspop_content h1 {
   font-size: 2em;
@@ -954,6 +956,7 @@ h4 a {
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 80%;
+  z-index: 13;
 }
 
 .heading2 {
@@ -988,6 +991,8 @@ h4 a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 13;
 }
 
 .heading3 {
@@ -1073,6 +1078,9 @@ h4 a {
   margin-right: 10px;
   position: relative;
   transition: all 0.3s ease 0s;
+}
+.social55 {
+  display: none;
 }
 .our-team .social li a:after {
   content: "";
@@ -1212,7 +1220,7 @@ h4 a {
     display: block;
     padding: 9px 0px 9px 0px;
     font-size: 1.6em;
-    z-index: 2;
+    z-index: 1;
     width: 150px;
   }
   .landingPage .leftband1 {
@@ -1223,7 +1231,7 @@ h4 a {
     top: 545px;
     background: #75e3ea;
     transform: rotate(353deg);
-    z-index: 1;
+    z-index: 0;
   }
 
   .landingPage .leftband2 {
@@ -1481,6 +1489,59 @@ h4 a {
   .heading2 {
     font-size: 1.5em;
     font-weight: bolder;
+  }
+  .our-team {
+    width: 250px;
+  }
+  .our-team .social {
+    display: none;
+  }
+  .social55 {
+    display: inline-block;
+  }
+  .our-team .social55 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.5s ease 0.3s;
+  }
+  .our-team:hover .social55 {
+    opacity: 1;
+  }
+  .our-team .social55 li {
+    display: inline-block;
+  }
+  .our-team .social55 li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+  }
+  .our-team .social55 li a:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ff1f01;
+    border-radius: 0 20px 20px 20px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+  }
+  .our-team .social55 li a:hover:after {
+    transform: rotate(180deg);
   }
 }
 @media screen and (max-width: 484px) {
